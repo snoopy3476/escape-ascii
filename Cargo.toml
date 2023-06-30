@@ -1,0 +1,12 @@
+[package]
+name = "escape-ascii"
+version = "0.1.0"
+authors = [ "Kim Hwiwon <kim.hwiwon@outlook.com>" ]
+edition = "2021"
+description = "An extremly tiny tool to convert stdin byte stream to printable escaped-ascii form (with slice::escape_ascii()), such as byte literals in source codes on many programming languages (e.g. \"\\x1b\\x04printable\\x16\\n\")"
+license = "MIT"
+
+rust-version = "1.60"
+exclude = [ "assets", "target" ]
+keywords = [ "escape", "ascii", "byte", "stream" ]
+categories = [ "command-line-utilities" ]
