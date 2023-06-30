@@ -3,10 +3,15 @@ name = "escape-ascii"
 version = "0.1.0"
 authors = [ "Kim Hwiwon <kim.hwiwon@outlook.com>" ]
 edition = "2021"
-description = "An extremly tiny tool to convert stdin byte stream to printable escaped-ascii form (with slice::escape_ascii()), such as byte literals in source codes on many programming languages (e.g. \"\\x1b\\x04printable\\x16\\n\")"
+description = "An extremly tiny tool to convert stdin raw byte stream to printable escaped-ascii form (with slice::escape_ascii()), such as byte literals in source codes on many programming languages (e.g. \"\\x1b\\x04printable\\x16\\n\")"
+repository = "https://github.com/snoopy3476/escape-ascii.git"
 license = "MIT"
 
 rust-version = "1.60"
-exclude = [ "assets", "target" ]
+exclude = [ "assets", "target", "tests" ]
 keywords = [ "escape", "ascii", "byte", "stream" ]
-categories = [ "command-line-utilities" ]
+categories = [ "command-line-utilities", "value-formatting" ]
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0"
